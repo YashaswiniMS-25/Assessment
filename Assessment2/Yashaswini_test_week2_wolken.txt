@@ -1,0 +1,104 @@
+1. both trainers are same
+2 Exceptions are the events which will be triggered because of abnormal condition.Exception handling is handling the programs which are terminated abruptly
+ two ways to handle the exception i) try catch block
+				ii) throws keyword
+3.custom exception is creating our own exception. To handle different exceptions 
+4.  Bind the data and behaviour into single block is called encapsulation
+    data should be private
+    there should be getters and setters
+    public class
+    must have default constructor
+5 polymorphism is property of a method to behave differently in different scenarios
+  i) runtime polymorphism
+  ii) compile time polymorphism
+
+6 Overloading is method with same name but different type of parameters and number of parameters
+ example:
+      class areaUtil{
+	public static void main(String []args{
+	area a=new area();
+       System.out.println( a.findArea(2,3));
+	System.out.println(a.findArea(2.4,5.6));
+}
+
+}
+class area{
+ 	public int findArea(int num1,int num2){
+		return num1*num2;
+	
+}
+	public float findArea(float num1,float num2)
+	{
+		return num1*num2;
+
+	}
+}
+
+7.Method overrriding is method with same name but different implementation.
+  class  Box{
+	public static void main(String []args){
+
+		findArea a=new findArea1();
+		findArea b=new findArea2();
+		a.area();
+		b.area();
+}
+class findArea2{
+         public void area(){
+aSystem.out.println("area of square")
+}
+
+}
+	
+
+
+
+class findArea1{
+public void area(){
+	system.out.println("area of rectangle");
+}
+
+	
+}
+
+8.x-worksZ
+9 there is no main method..
+  10. Since institutes  is not an interface xworkz cant implements institutes.so it will give error
+11 Abstraction is hiding the implementation details from users and providing only required functionality.
+  by abstract keyword
+  by using interfaces
+using abstract classes and interfaces we can achieve 100% abstarction
+12.using constructors
+      class student{
+		String name;
+		int marks;
+        public student(String a, int b){
+		name=a;
+		marks=b;
+}
+}
+
+class studentutil{
+
+	public static void main(Strin args[]){
+}		student s1=new student("abc",32);
+} 
+
+using getters and setters
+    class student{
+
+
+	String name;
+	int marks;
+public void setName(String name){
+
+	this.name=name;
+	
+
+public void setMarks(int marks){
+this.marks=marks;
+}
+}
+	
+     
+	
