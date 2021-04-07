@@ -1,0 +1,102 @@
+1. Objects are multiple copies of a class.It is an objective for creation of object
+
+2. Class is a blueprint of states and behaviours
+
+3.Variable is a container to hold or store some values.
+  Variables are used in the program to store values which will be used in computing
+
+4 Instance variables are the variables which are declared inside the class but outside the method without using any keyword.It holds value that must be referenced by more than one method
+
+5.static variable is the one which is declared inside class but outside the method with the prefix of keyword static.Static  variable is intialized only once at the start of the expression,and can be accessed only by the classname.
+
+6. i)Instance variables are declared in a class but outside a method constructor or any block without any keyword whereas class variable is declared with a keyword static in a class outside the method construcor or any block
+   ii)we are required to create an object in order to access the instance variables  objname.instancevariable but in class variables classname is used to access it. classname.classveriable
+
+7 Objects are created with the keyword new. Syntax : classname objname=new classname();
+ ex class Student{
+      int marks;
+	String name;
+    public static void main(String []a){
+       student s1=new student();//  object creation
+     }
+}
+
+8. A method is a block of code that performs specific task when it is called.
+
+9  Method overloading: multiple methods with same name but different in type and number of arguments
+
+10 method overloading
+
+   class Box{
+    	int length;
+	double breadth;
+	float height;
+	void area(int length, double breadth,int height)
+{
+        system.out.println("3 parameter");
+}
+void area(int length, double breadth,float height)
+	{
+        system.out.println("different in types");
+     	 }
+
+}
+ 
+class boxUtil{
+	
+	box b1=new box();
+	b1.area(3,4.4,2);//method overloading
+	b1.area(3,2.33,5.6);
+
+}
+
+ii)class Month
+	{
+
+	public static void main(String []a)
+	{
+		int a=6;
+	switch(a)
+	{
+		case 1: System.out.println("jan");
+		break;	
+		case 2: System.out.println("feb");
+		break;	
+		case 3: System.out.println("mar");
+		break;	
+		case 4: System.out.println("apr");
+		break;	
+		case 5: System.out.println("may");
+		break;	
+		case 6: System.out.println("jun");
+		break;	
+		case 7: System.out.println("july");
+		break;	
+		case 8: System.out.println("aug");
+		break;	
+		case 9: System.out.println("sept");
+		break;	
+		case 10: System.out.println("oct");
+		break;
+		case 11: System.out.println("nov");
+		break;	
+		case 12: System.out.println("dec");
+		break;	
+		default: System.out.println("invallid")	
+	}
+
+	}
+
+iii)class Factorial
+{
+public static void main(String []a){
+ int i=1,fact=1,n=6;
+ 	for(i=1;i<n;i++)
+	{
+	fact=fact*i;
+	System.out.println("factorial of"+n+"="+fact);
+	}
+}
+}
+
+      	
