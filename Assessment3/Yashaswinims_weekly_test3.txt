@@ -1,0 +1,109 @@
+1.A database is an organized collection of data.Database is used to store the large volume of data so that data can be easily access modify and delete
+
+2database management system is used to store and manage the data in files
+ relational database management system is used to store the data in the form of tables.
+3.sql stsnds for structured query language used to store and retrive the data in rdbms
+	using sql we can easily access the data from database.
+4java database connectivity is an application programming interface resides between java application and dbms
+	load and regiser the driver
+	establish connection with db server
+	create a statement or platform
+	results set
+	close all connection
+5. oops is an appproach
+   fundamentals of oops: inheritance
+			abstraction
+			polymorphism
+			encapsulation
+
+Inheritance: child or derived or sub class aquires the property of parent or base or super class is called inheritance. 
+syntax : class sub_class_name extends superclass_name;
+
+
+child and parents:,all properties of parents are inherited by their children
+abstraction:hiding the details and achieve the functionality with the help of interface is called abstraction
+it is used to achieve simplicity and loose coupling
+examples atm machine, mobile, lift
+
+polymorphism: polymorphism is property of a method to behave differently in different scenarios
+  i) runtime polymorphism
+  ii) compile time polymorphism
+
+examples:a principal acting as a lucturer or dean character depending on different situation
+
+encpsulation: Bind the data and behaviour into single block is called encapsulation
+   example: capsule
+6 run time polymorphism :in this process overriden method is called through reference   variable of a super class. ex method overriding. also called as dynamic binding
+  upcasting: class a{}
+             class b extends a{}
+             A a=new b();
+  compile time polymorphism: it is used to achievr method overlaoding and tightly coupling. also called as static binding
+
+7. constructor is a method having name same as class name which is used to initializes the instance members of a class. calling one constructer from another constructer using this or super keyword.
+	*default constructor*parameterized constructor
+	class book{
+
+		public book(){
+ 			system.out.println("")
+}
+}
+
+class book2{
+	public book(int a){
+system.out.println(a)
+}
+}
+
+8. mysql is a database management that allows you to manage relational databases.It makes the creation accessing modifying deletion opration simpler.
+9.create schema wolken;
+create table movie_details(
+id int not null,
+title varchar(20),
+category varchar(20),
+language varchar(45),
+
+primarykey(id)
+
+);
+
+
+
+
+create table movie_member(
+id int not null,
+first_name varchar(20),
+last_name varchar(20),
+movie_id int 
+age int
+primarykey(id)
+ foreign key(movie_id) references movie_details(id),
+);
+
+
+10.insert into movie_member values(1,"adam","smith",1,20);
+insert into movie_member values(2,"ravi","kumar",2,19);
+insert into movie_member values(3,"susan","davidson",5,17);
+insert into movie_member values(4,"jenny","adrianna",8,21);
+insert into movie_member values(6,"lee","pong",4,18);
+insert into movie_member values(7,"rakesh","kanna",3,25);
+insert into movie_member values(9,"pravin","rathod",5,22);
+
+insert into movie_details values(1,"kgf","action","kannada");
+insert into movie_details values(2,"safe house","action","english");
+insert into movie_details values(3,"dil bechara","romance","hindi");
+
+
+11. select *from  movie_member left outer join movie_details on movie_member.movie_id=movie_details.id
+12.select *from  movie_member right join movie_details on movie_member.movie_id=movie_details.id
+13.select * from movie_member join movie_details on movie_id=id 
+where movie_details.title="3 idiots"; 
+14.    select * from movie_member join movie_details on movie_id=id 
+where movie_details.title="3 idiots"; 
+15.select *from  movie_member inner join movie_details on movie_member.movie_id=movie_details.id;
+16.select *from  movie_member right outer join movie_details on movie_member.movie_id=movie_details.id
+17 select *from  movie_member left outer join movie_details on movie_member.movie_id=movie_details.id UNION 
+select *from  movie_member right outer join movie_details on movie_member.movie_id=movie_details.id
+
+
+
+
